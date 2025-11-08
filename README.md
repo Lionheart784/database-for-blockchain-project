@@ -780,4 +780,12 @@ ORDER BY ABS((c.spot_price - d.price) / d.price) DESC;
 
 MIT License
 
+## 👥 项目贡献者
+
+[![Contributors](https://img.shields.io/github/contributors/Lionheart784/database-for-blockchain-project?style=for-the-badge)](https://github.com/Lionheart784/database-for-blockchain-project/graphs/contributors)
+
+<a href="https://github.com/Lionheart784/database-for-blockchain-project/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Lionheart784/database-for-blockchain-project" />
+</a>
+
 ---
