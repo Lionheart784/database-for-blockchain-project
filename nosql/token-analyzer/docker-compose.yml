@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  # MongoDB服务
+  mongodb:
+    image: mongo:7.0
+    container_name: token-analyzer-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      # 设置管理员账号密码
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: 123456789
+      # 创建默认数据库
+      MONGO_INITDB_DATABASE: token_analyzer
+    volumes:
+      # 数据持久化
+      - mongodb_data:/data/db
+      # 配置文件（可选）
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      # 索引文件
+      - ./nosql_indexes.js:/data/nosql_indexes.js
+    networks:
+      - token-network
+
+  # Redis服务
+  redis:
+    image: redis:7-alpine
+    container_name: token-analyzer-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    # 启用AOF持久化
+    command: redis-server --appendonly yes --requirepass yourpassword
+    volumes:
+      # 数据持久化
+      - redis_data:/data
+    networks:
+      - token-network
+
+# 数据卷定义
+volumes:
+  mongodb_data:
+    driver: local
+  redis_data:
+    driver: local
+
+# 网络定义
+networks:
+  token-network:
+    driver: bridge
