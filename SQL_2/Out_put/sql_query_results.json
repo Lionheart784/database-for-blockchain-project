@@ -1,0 +1,38 @@
+[
+  {
+    "query_name": "Q1: 点查询 - 单个代币最新信息",
+    "result_count": 1,
+    "avg_latency_ms": 0.32,
+    "p95_latency_ms": 0.0,
+    "min_latency_ms": 0.0,
+    "max_latency_ms": 16.35,
+    "iterations": 100
+  },
+  {
+    "query_name": "Q2: 范围查询 - 24小时价格历史",
+    "result_count": 0,
+    "avg_latency_ms": 0.16,
+    "p95_latency_ms": 0.0,
+    "min_latency_ms": 0.0,
+    "max_latency_ms": 15.85,
+    "iterations": 100
+  },
+  {
+    "query_name": "Q3: 聚合查询 - Top 10 高评分代币",
+    "result_count": 10,
+    "avg_latency_ms": 0.8,
+    "p95_latency_ms": 15.71,
+    "min_latency_ms": 0.0,
+    "max_latency_ms": 16.32,
+    "iterations": 100
+  },
+  {
+    "query_name": "Q4: 复杂JOIN - 代币风险分析",
+    "result_count": 20,
+    "avg_latency_ms": 2.62,
+    "p95_latency_ms": 16.43,
+    "min_latency_ms": 0.0,
+    "max_latency_ms": 16.46,
+    "iterations": 50
+  }
+]

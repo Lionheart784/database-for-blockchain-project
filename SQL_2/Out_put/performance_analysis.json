@@ -1,0 +1,132 @@
+{
+  "table_stats": [
+    {
+      "table": "dex_price_2025_02",
+      "rows": 100000,
+      "size": "13 MB"
+    },
+    {
+      "table": "cex_price_2025_02",
+      "rows": 23800,
+      "size": "2152 kB"
+    },
+    {
+      "table": "token_holder",
+      "rows": 2000,
+      "size": "296 kB"
+    },
+    {
+      "table": "token_score",
+      "rows": 1000,
+      "size": "232 kB"
+    },
+    {
+      "table": "alert",
+      "rows": 500,
+      "size": "72 kB"
+    },
+    {
+      "table": "token",
+      "rows": 103,
+      "size": "16 kB"
+    },
+    {
+      "table": "project",
+      "rows": 100,
+      "size": "16 kB"
+    },
+    {
+      "table": "dex_price",
+      "rows": 0,
+      "size": "0 bytes"
+    },
+    {
+      "table": "dex_price_2025_03",
+      "rows": 0,
+      "size": "0 bytes"
+    },
+    {
+      "table": "cex_price",
+      "rows": 0,
+      "size": "0 bytes"
+    },
+    {
+      "table": "cex_price_2025_03",
+      "rows": 0,
+      "size": "0 bytes"
+    },
+    {
+      "table": "dex_price_2025_01",
+      "rows": 0,
+      "size": "0 bytes"
+    },
+    {
+      "table": "cex_price_2025_01",
+      "rows": 0,
+      "size": "0 bytes"
+    }
+  ],
+  "top_indexes": [
+    {
+      "table": "token_score",
+      "index": "idx_score_token_time",
+      "scans": 15758,
+      "size": "128 kB"
+    },
+    {
+      "table": "dex_price_2025_02",
+      "index": "dex_price_2025_02_token_address_timestamp_idx",
+      "scans": 10202,
+      "size": "13 MB"
+    },
+    {
+      "table": "dex_price_2025_03",
+      "index": "dex_price_2025_03_token_address_timestamp_price_idx",
+      "scans": 10202,
+      "size": "8192 bytes"
+    },
+    {
+      "table": "token",
+      "index": "token_pkey",
+      "scans": 155,
+      "size": "16 kB"
+    },
+    {
+      "table": "dex_price_2025_02",
+      "index": "dex_price_2025_02_timestamp_idx",
+      "scans": 153,
+      "size": "888 kB"
+    },
+    {
+      "table": "dex_price_2025_01",
+      "index": "dex_price_2025_01_token_address_timestamp_price_idx",
+      "scans": 101,
+      "size": "8192 bytes"
+    },
+    {
+      "table": "project",
+      "index": "idx_project_token",
+      "scans": 2,
+      "size": "16 kB"
+    },
+    {
+      "table": "dex_price_2025_02",
+      "index": "dex_price_2025_02_pkey",
+      "scans": 0,
+      "size": "3088 kB"
+    },
+    {
+      "table": "dex_price_2025_01",
+      "index": "dex_price_2025_01_pkey",
+      "scans": 0,
+      "size": "8192 bytes"
+    },
+    {
+      "table": "dex_price_2025_01",
+      "index": "dex_price_2025_01_timestamp_idx",
+      "scans": 0,
+      "size": "8192 bytes"
+    }
+  ],
+  "cache_hit_ratio": "88.24%"
+}
