@@ -25,13 +25,13 @@ class DatabaseBenchmark:
             port=5432,
             database="token_analyzer",
             user="postgres",
-            password="yourpassword"
+            password="123456"
         )
         self.pg_cur = self.pg_conn.cursor()
         print("✓ PostgreSQL连接成功")
 
         # NoSQL连接
-        self.mongo_client = MongoClient("mongodb://admin:yourpassword@localhost:27017/")
+        self.mongo_client = MongoClient("mongodb://admin:123456789@localhost:27017/")
         self.mongo_db = self.mongo_client["token_analyzer"]
         print("✓ MongoDB连接成功")
 

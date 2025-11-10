@@ -20,7 +20,7 @@ DB_CONFIG = {
 
 # 数据生成配置
 NUM_TOKENS = 100            # 生成100个代币
-NUM_DEX_PRICES = 100000     # 每个代币生成1000条价格记录
+NUM_DEX_PRICES = 1000   # 每个代币生成1000条价格记录
 NUM_HOLDERS_PER_TOKEN = 20  # 每个代币生成20个持仓地址
 NUM_ALERTS_PER_TOKEN = 10   # 每个代币生成10条预警
 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 NoSQL数据加载脚本 - NoSQL组员1
 功能: 生成并加载测试数据到MongoDB和Redis
@@ -30,7 +29,7 @@ MONGO_CONFIG = {
 REDIS_CONFIG = {
     "host": os.getenv("REDIS_HOST", "localhost"),
     "port": int(os.getenv("REDIS_PORT", "6379")),
-    "password": os.getenv("REDIS_PASS", "yourpassword"),  # ⚠️ 请修改或设置环境变量
+    "password": os.getenv("REDIS_PASS", "123456789"),  # ⚠️ 请修改或设置环境变量
     "decode_responses": True
 }
 

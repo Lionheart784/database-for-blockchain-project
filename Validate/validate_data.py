@@ -20,7 +20,7 @@ def validate_databases():
             port=5432,
             database="token_analyzer",
             user="postgres",
-            password="yourpassword"
+            password="123456"
         )
         pg_cur = pg_conn.cursor()
         print("✓ PostgreSQL连接成功")
@@ -30,7 +30,7 @@ def validate_databases():
 
     # 连接NoSQL数据库
     try:
-        mongo_client = MongoClient("mongodb://admin:yourpassword@localhost:27017/")
+        mongo_client = MongoClient("mongodb://admin:123456789@localhost:27017/?authSource=admin")
         mongo_db = mongo_client["token_analyzer"]
         print("✓ MongoDB连接成功")
     except Exception as e:
